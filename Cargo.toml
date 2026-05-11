@@ -7,7 +7,7 @@ members = [
 , "modules/shared"]
 
 [workspace.package]
-version = "1.0.1"
+version = "1.0.2"
 edition = "2024"
 authors = ["Kamran Wajdani <kamran@zuz.com.pk>"]
 repository = "https://github.com/your-username/flare"

@@ -16,4 +16,6 @@ async fn main() {
         module.start().await;
     }
 
+    println!("Zuz version {} is running!", VERSION);
+
 }
