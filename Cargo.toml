@@ -7,11 +7,11 @@ members = [
 , "modules/shared"]
 
 [workspace.package]
-version = "1.0.2"
+version = "1.0.3"
 edition = "2024"
 authors = ["Kamran Wajdani <kamran@zuz.com.pk>"]
-repository = "https://github.com/your-username/flare"
-homepage = "https://flare.zuz.com.pk"
+repository = "https://github.com/zuzpk/rust-workspace"
+homepage = "https://github.com/zuzpk/rust-workspace"
 license = "MIT"
 
 [workspace.dependencies]
