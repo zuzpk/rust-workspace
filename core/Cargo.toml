@@ -1,0 +1,25 @@
+[package]
+name = "zuz"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+repository.workspace = true
+homepage.workspace = true
+license.workspace = true
+
+[lib]
+name = "zuz"
+path = "src/lib.rs"
+
+[[bin]]
+name = "zuz-node"
+path = "src/bin/node.rs"
+
+[dependencies]
+zuz-shared = { workspace = true }
+zuz-base = { workspace = true }
+async-trait = { workspace = true }
+tokio = { workspace = true }
+tokio-tungstenite = { workspace = true }
+
+[dev-dependencies]

@@ -1,0 +1,38 @@
+# Rust Specific
+/target/
+
+# Environment & Secrets
+.env
+*.env
+.env.local
+
+# MacOS metadata
+.DS_Store
+
+# Windows thumbnail caches
+Thumbs.db
+
+# JetBrains (IntelliJ, RustRover, CLion)
+.idea/
+*.iml
+
+# Visual Studio Code
+.vscode/
+# Exceptions for VS Code: allow launch.json and tasks.json if you want to share them
+# !.vscode/launch.json
+# !.vscode/tasks.json
+
+# Swap files from Vim
+[._]*.s[a-v][a-z]
+!*.svg  # Prevent vim swap rule from accidentally ignoring SVG images
+[._]*.swp
+
+# Backup files from various editors
+*.bak
+*.rs.bk
+*~
+
+# Cargo Specific
+# We WANT to keep Cargo.lock for Flare since it's an application.
+# But we ignore the local cargo credentials/registry caches.
+cargo-home/

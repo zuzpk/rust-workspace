@@ -1,0 +1,31 @@
+[workspace]
+resolver = "3"
+members = [
+    "core", 
+    "modules/shared",
+    "modules/base"
+, "modules/shared"]
+
+[workspace.package]
+version = "1.0.1"
+edition = "2024"
+authors = ["Kamran Wajdani <kamran@zuz.com.pk>"]
+repository = "https://github.com/your-username/flare"
+homepage = "https://flare.zuz.com.pk"
+license = "MIT"
+
+[workspace.dependencies]
+# External crates
+async-trait = "0.1"
+tokio = { version = "1.52.3", features = ["full"] }
+tokio-tungstenite = "0.29.0"
+
+# Internal workspace crates
+zuz-shared = { path = "modules/shared" }
+zuz-base = { path = "modules/base" }
+
+
+[profile.dev]
+incremental = false
+opt-level = 0
+debug = true
